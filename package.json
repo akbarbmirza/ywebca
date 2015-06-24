@@ -1,0 +1,16 @@
+{
+  "name": "ywca-workspace",
+  "version": "0.0.1",
+  "description": "YWCA Workspace for Akbar Mirza",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:akbarbmirza/ywebca.git"
+  },
+  "author": {
+    "name": "Akbar Mirza",
+    "email": "akbarbmirza@gmail.com",
+    "url": "https://github.com/akbarbmirza"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}

@@ -5,7 +5,7 @@
 // evaluated value is not undefined.
 Exer.expressions1 = function () {
 
-  return /* your answer here */ ;
+  return (5 + 5) ;
 
 };
 
@@ -14,6 +14,7 @@ Exer.expressions1 = function () {
 Exer.statements1 = function () {
 
   // Write a statement that is not undefined.
+  5;
 
 };
 /* jshint ignore:end */
@@ -24,8 +25,10 @@ Exer.statements1 = function () {
 Exer.variables1 = function () {
 
   // Write a statement that declares a variable.
+  var myVar = 5;
 
   // Return that variable.
+  return myVar;
 
 };
 
@@ -33,26 +36,30 @@ Exer.variables1 = function () {
 Exer.variables2 = function () {
 
   // Write a statement that declares a variable.
+  var myName;
 
   // Write a statement to assign a number value to your variable.
+  myName = 1;
 
   // Return the variable.
-
+  return myName;
 };
 
 // Variables 3
 Exer.variables3 = function () {
 
   // Write a statement that declares a variable and initializes it to a string.
+  var myName = "Akbar Mirza";
 
   // Return the variable.
-
+  return myName;
 };
 
 // Variables 4
 Exer.variables4 = function ( n ) {
 
   // Return the parameter.
+  return n;
 
 };
 
@@ -60,9 +67,10 @@ Exer.variables4 = function ( n ) {
 Exer.variables5 = function ( n ) {
 
   // Declare a new variable and initialize it to the value of `n`.
+  var myVariable = n;
 
   // Return the new variable.
-
+  return myVariable;
 };
 
 // Variables 6
@@ -70,11 +78,13 @@ Exer.variables6 = function ( stacys ) {
 
   // You have 3 apples
   // (declare a variable named `apples` and initialize it to `3`)
+  var apples = 3;
 
   // Stacy gives you more apples
   // (the parameter `stacys`)
 
   // Return the total number of apples you have.
+  return apples + stacys;
 
 };
 
@@ -83,15 +93,19 @@ Exer.variables6 = function ( stacys ) {
 Exer.variables7 = function ( change ) {
 
   // You find a quarter.
+  var quarter = 0.25;
 
   // Then you spend a dime on old fashioned candy.
   // How much money do you have now?
+  var dime = 0.10;
+  change = change + quarter - dime;
 
   // Use type coercion to turn your pocket change into a string add a dollar
   // sign to the beginning.
+  change = "$" + change;
 
   // Return that string.
-
+  return change;
 };
 
 
@@ -100,15 +114,14 @@ Exer.variables7 = function ( change ) {
 // Keywords 1
 // Uncomment the following function by removing the slash-asterisk pairs.
 // Fix the function so no keywords or reserved words are improperly used.
-/*
-Exer.keywords1 = function ( true, two ) {
-  var new = 2;
-  var const = two+2;
-  true += "2";
-  var function = new + const + true + two;
-  return function;
+Exer.keywords1 = function ( trueVar, two ) {
+  var newVar = 2;
+  var constant = two + 2;
+  trueVar += "2";
+  var func = newVar + constant + trueVar + two;
+  return func;
 };
-*/
+
 
 /*--------------------------    THE ENVIRONMENT    ---------------------------*/
 

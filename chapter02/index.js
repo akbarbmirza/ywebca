@@ -265,7 +265,7 @@ Exer.return5 = function () {
 // Call prompt with the string and return the result.
 Exer.prompt1 = function () {
 
-  prompt("What is the answer to the meaning of life, the universe, and everything?");
+  return prompt("What is the answer to the meaning of life, the universe, and everything?");
 
 };
 
@@ -390,13 +390,33 @@ Exer.condition3 = function ( whatDay ) {
 Exer.condition4 = function () {
 
   // Prompt the user
+  var userInput = prompt("Enter today's date, please.");
 
   // If the user's input is not a number...
+
+  if (typeof userInput != "number" || isNaN(userInput)) {
+    console.log("What do you think this is, bub? Wonderland?");
+  }
   // Otherwise...
+  else {
     // If the user's input is less than 1...
+    if (userInput < 1) {
+      console.log("Negativelaaaaaaand~!");
+    }
     // If the user's input is greater than 31...
+    else if (userInput > 31) {
+      console.log("Are they paying you overtime for this?");
+    }
     // If the user's input between 29 and 31, inclusive...
+    else if (userInput >= 29 && userInput <= 31) {
+      console.log("I sure hope it isn't February.");
+    }
     // Otherwise...
+    else {
+      console.log("Did you know? There are exactly " + 
+        userInput +" ways to make today awesome!");
+    }
+  }
 
 };
 
@@ -405,16 +425,12 @@ Exer.condition4 = function () {
 // While 1
 // Turn the code in the function into a while loop.
 Exer.while1 = function () {
-  console.log("10 sheep");
-  console.log("9 sheep");
-  console.log("8 sheep");
-  console.log("7 sheep");
-  console.log("6 sheep");
-  console.log("5 sheep");
-  console.log("4 sheep");
-  console.log("3 sheep");
-  console.log("2 sheep");
-  console.log("1 sheep");
+  var numSheep = 10;
+
+  while (numSheep > 0) {
+    console.log(numSheep + " sheep");
+    numSheep--;
+  }
 };
 
 /* jshint ignore:start */
@@ -422,10 +438,25 @@ Exer.while1 = function () {
 // Recreate the code in the function without a loop
 Exer.while2 = function () {
   var deadWitch = "I'm melting!";
-  while(deadWitch.length > 0) {
-    console.log(deadWitch);
-    deadWitch = deadWitch.substr(2);
-  }
+
+  console.log(deadWitch); // I'm melting!
+  deadWitch = deadWitch.substr(2);
+
+  console.log(deadWitch); // m melting!
+  deadWitch = deadWitch.substr(2);
+
+  console.log(deadWitch); // melting!
+  deadWitch = deadWitch.substr(2);
+
+  console.log(deadWitch); // lting!
+  deadWitch = deadWitch.substr(2);
+
+  console.log(deadWitch); // ing!
+  deadWitch = deadWitch.substr(2);
+
+  console.log(deadWitch); // g!
+  deadWitch = deadWitch.substr(2);
+
   console.log("What a world!");
 };
 /* jshint ignore:end */
@@ -434,12 +465,11 @@ Exer.while2 = function () {
 // Turn the code in the function into a single do while loop.
 // Hint: 0, 1, and 2 are remainders from dividing numbers by 3.
 Exer.doWhile1 = function () {
-  console.log(0);
-  console.log(1);
-  console.log(2);
-  console.log(0);
-  console.log(1);
-  console.log(2);
+  var num = 0;
+  do {
+    console.log(num % 3);
+    num++;
+  } while (num < 6)
 };
 
 /* jshint ignore:start */
@@ -447,9 +477,26 @@ Exer.doWhile1 = function () {
 // Recreate the code in the function without a loop
 Exer.doWhile2 = function () {
   var trainNum = 1;
-  do {
-    console.log("Train# " + trainNum + ": In flight!?");
-  } while (trainNum++ < 7);
+
+  console.log("Train# " + trainNum + ": In flight!?");
+  trainNum++; // trainNum == 2
+
+  console.log("Train# " + trainNum + ": In flight!?");
+  trainNum++; // trainNum == 3
+
+  console.log("Train# " + trainNum + ": In flight!?");
+  trainNum++; // trainNum == 4
+
+  console.log("Train# " + trainNum + ": In flight!?");
+  trainNum++; // trainNum == 5
+
+  console.log("Train# " + trainNum + ": In flight!?");
+  trainNum++; // trainNum == 6
+
+  console.log("Train# " + trainNum + ": In flight!?");
+  trainNum++; // trainNum == 7
+
+  console.log("Train# " + trainNum + ": In flight!?");
 };
 /* jshint ignore:end */
 
@@ -458,13 +505,21 @@ Exer.doWhile2 = function () {
 // Indenting 1
 // Correctly indent the following code block using TWO spaces for each block
 Exer.indenting1 = function() {
-var firstName = "Zachery"; var lastName = "Moneypenny"; if(firstName === "Zachery") { lastName = "Johnson"; }
+  var firstName = "Zachery";
+  var lastName = "Moneypenny";
+  if (firstName === "Zachery") {
+    lastName = "Johnson";
+  }
 };
 
 // Indenting 2
 // Correctly indent the following code block using FOUR spaces for each block
 Exer.indenting2 = function() {
-var firstName = "Penny"; var lastName = "Moneywhistle"; if(firstName === "Penny") { lastName = "Johnson"; }
+    var firstName = "Penny";
+    var lastName = "Moneywhistle";
+    if (firstName === "Penny") {
+        lastName = "Johnson";
+    }
 };
 
 /*-----------------------------    FOR LOOPS    ------------------------------*/
@@ -474,10 +529,39 @@ var firstName = "Penny"; var lastName = "Moneywhistle"; if(firstName === "Penny"
 Exer.for1 = function () {
 
   var scream;
-  for ( scream = "..." ; scream.length < 28; scream += "AA" ) {
-    console.log( scream );
-    scream = "    " + scream;
-  }
+
+  scream = "...";
+  console.log(scream);
+  scream = "    " + scream;
+  scream += "AA"; // scream.length == 9
+  // check: if scream.length < 28
+  // true
+
+  console.log(scream);
+  scream = "    " + scream;
+  scream += "AA"; // scream.length == 15
+  // check: if scream.length < 28
+  // true
+
+  console.log(scream);
+  scream = "    " + scream;
+  scream += "AA"; // scream.length == 21
+  // check: if scream.length < 28
+  // true
+
+  console.log(scream);
+  scream = "    " + scream;
+  scream += "AA"; // scream.length == 27
+  // check: if scream.length < 28
+  // true
+
+  console.log(scream);
+  scream = "    " + scream;
+  scream += "AA"; // scream.length == 33
+  // check: if scream.length < 28
+  // false
+  // so stop!
+
   scream += "H!"
   console.log( scream );
 
@@ -488,16 +572,13 @@ Exer.for1 = function () {
 // Rewrite the repetative code with for loops.
 Exer.for2 = function () {
 
-  console.log( "Hi!" );
-  console.log( "My name is" );
-  console.log( "My name is" );
-  console.log( "My name is" );
-  console.log( "Slim Shady" );
-  console.log( "Hi!" );
-  console.log( "My name is" );
-  console.log( "My name is" );
-  console.log( "My name is" );
-  console.log( "Slim Shady" );
+  for (var i = 0; i < 2; i++) {
+    console.log( "Hi!" );
+    for (var j = 0; j < 3; j++) {
+      console.log( "My name is" );    
+    }
+    console.log( "Slim Shady" );
+  }
 
 };
 /* jshint ignore:end */
@@ -507,7 +588,13 @@ Exer.for2 = function () {
 // "even" if the number is even and "odd" if the number is odd.
 Exer.for3 = function () {
 
-  // Your work here
+  for (var i = 20; i >= 5; i--) {
+    if (i % 2 == 0) {
+      console.log(i, "even")
+    } else {
+      console.log(i, "odd");
+    }
+  }
 
 };
 
@@ -518,7 +605,7 @@ Exer.for3 = function () {
 Exer.breaking1 = function(yeng) {
 
   while(yeng()) {
-
+    break;
   }
 
 };
@@ -543,14 +630,19 @@ Exer.breaking2 = function(theatre) {
 Exer.succinct1 = function ( kiwis ) {
 
   // Quadruple kiwis.
+  kiwis *= 4;
 
   // Reduce kiwis by 2.
+  kiwis -= 2;
 
   // Halve kiwis.
+  kiwis /= 2;
 
   // Concatenate " handsomely hirsute kiwis" to kiwis.
+  kiwis += " handsomely hirsute kiwis";
 
   // Return kiwis.
+  return kiwis;
 
 };
 
@@ -558,7 +650,7 @@ Exer.succinct1 = function ( kiwis ) {
 // Edit the for loop to use the incrementation operator.
 Exer.succinct2 = function () {
 
-  for ( var hippo = 2; hippo <= 10; hippo += 1 ) {
+  for ( var hippo = 2; hippo <= 10; hippo++ ) {
     console.log( hippo + "! " + hippo + " fluttering hippos! Ah ah ah ah ah!" );
   }
 
@@ -571,7 +663,7 @@ Exer.succinct3 = function () {
   var message = "Reverse me!";
   var pointer = message.length;
   while( pointer > 0 ) {
-    console.log( message.charAt( pointer-- ) );
+    console.log( message.charAt( --pointer ) );
   }
 
 };
@@ -587,13 +679,27 @@ Exer.switch1 = function ( animal ) {
   // In each case, concatenate the correct response to end of the `output`
   // string.
 
+  switch(animal) {
     // "cow": "foo"
+    case "cow":
+      output += "foo";
+      break;
 
     // "sheep": "bar"
+    case "sheep":
+      output += "bar";
+      break;
 
     // "duck": "quux"
+    case "duck":
+      output += "quux";
+      break;
 
     // default: "ring-a-ding-ding-dingding-ding-a-ding-ding"
+    default:
+      output += "ring-a-ding-ding-dingding-ding-a-ding-ding";
+      break;
+  }
 
   output += '"!';
   console.log( output );
@@ -605,11 +711,11 @@ Exer.switch1 = function ( animal ) {
 /* jshint ignore:start */
 Exer.capitalization1 = function() {
 
-  var ZeRo = 0;
-  var HAPPYCAT = new string("How did this get here! I'm not good at computer!");
-  for (var Index = 0; I < HAPPYCAT.Length; Index++) {
-    if (Index % 4 == ZeRo) {
-      Console.Log(HAPPYCAT);
+  var zero = 0;
+  var happyCat = new String("How did this get here! I'm not good at computer!");
+  for (var index = 0; index < happyCat.length; index++) {
+    if (index % 4 == zero) {
+      console.log(happyCat);
     }
   }
 
@@ -621,8 +727,10 @@ Exer.capitalization1 = function() {
 Exer.comments1 = function ( war, missiles, wood, sheep, brick ) {
 
   if ( war ) {
+
     if ( missiles ) {
-      missiles.launch();
+      // missiles.launch();
+      // something about wheat
     } else {
       cower();
     }
@@ -632,7 +740,7 @@ Exer.comments1 = function ( war, missiles, wood, sheep, brick ) {
     } else if ( sheep ) {
       sheep.trade( wood, 3 );
     } else {
-      brick.buy(2);
+      brick.buy(2); // oh no! Look who it is, bandits! These bricks are outrageous!
     }
   }
 
@@ -640,6 +748,15 @@ Exer.comments1 = function ( war, missiles, wood, sheep, brick ) {
 
 Exer.comments2 = function () {
 
-  // your work here
-
+  /*                      /
+     *              /      /
+     *          /  /   /  /         /
+     *         /      /       /    /
+     *       ,---------------.   ,-,
+     *      /                 `-'  |
+     *     [   A I R M A I L   |   |
+     *      \                 ,-.  |
+     *       `---------------'   `-`
+     *
+     */
 };

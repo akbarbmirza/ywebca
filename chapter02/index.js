@@ -236,9 +236,8 @@ Exer.return3 = function () {
 // Log the result of the string concatenation of two separate calls to
 // `magicFunc`.
 Exer.return4 = function () {
-
-  console.log(magicFunc() + magicFunc());
-  return 0;
+  var newStr = magicFunc() + magicFunc(); 
+  console.log(newStr);
 
 };
 

@@ -12,5 +12,8 @@
     "url": "https://github.com/akbarbmirza"
   },
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {
+    "ywca-chapter01": "^0.1.1",
+    "ywca-chapter02": "^0.1.1"
+  }
 }

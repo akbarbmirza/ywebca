@@ -507,7 +507,7 @@ Exer.doWhile2 = function () {
 Exer.indenting1 = function() {
   var firstName = "Zachery";
   var lastName = "Moneypenny";
-  if (firstName === "Zachery") {
+  if(firstName === "Zachery") {
     lastName = "Johnson";
   }
 };
@@ -517,7 +517,7 @@ Exer.indenting1 = function() {
 Exer.indenting2 = function() {
     var firstName = "Penny";
     var lastName = "Moneywhistle";
-    if (firstName === "Penny") {
+    if(firstName === "Penny") {
         lastName = "Johnson";
     }
 };

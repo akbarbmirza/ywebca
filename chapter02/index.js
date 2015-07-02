@@ -236,7 +236,7 @@ Exer.return3 = function () {
 // Log the result of the string concatenation of two separate calls to
 // `magicFunc`.
 Exer.return4 = function () {
-  var newStr = magicFunc() + "" + magicFunc(); 
+  var newStr = magicFunc() + "" + magicFunc();
   console.log(newStr);
 
 };
@@ -339,7 +339,7 @@ Exer.condition2 = function ( temperature ) {
   if (temperature >= 70) {
     // Then output:
     console.log("Hermit crab warning!");
-    
+
   }
 
   // Otherwise, output
@@ -413,7 +413,7 @@ Exer.condition4 = function () {
     }
     // Otherwise...
     else {
-      console.log("Did you know? There are exactly " + 
+      console.log("Did you know? There are exactly " +
         userInput +" ways to make today awesome!");
     }
   }
@@ -575,7 +575,7 @@ Exer.for2 = function () {
   for (var i = 0; i < 2; i++) {
     console.log( "Hi!" );
     for (var j = 0; j < 3; j++) {
-      console.log( "My name is" );    
+      console.log( "My name is" );
     }
     console.log( "Slim Shady" );
   }

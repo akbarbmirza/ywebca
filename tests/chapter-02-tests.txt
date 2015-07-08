@@ -1,0 +1,322 @@
+
+
+Expressions and Statements exercises **
+
+Variables exercises *******
+
+Keywords and Reserved Words exercises *
+
+The environment exercises *
+
+the functions exercises *
+
+The console.log Function exercises *****
+
+Return Values exercises *****
+
+Prompt and Confirm exercises **
+
+Control Flow exercises **
+
+Conditional Execution exercises ****
+
+While and dowhile Loops exercises ****
+
+Indenting Code exercises **
+
+for Loops exercises ***
+
+Breaking Out of a Loop exercises **
+
+Updating Variables Succinctly exercises ***
+
+Dispatching on a Value with switch exercises *
+
+Capitalization exercises *
+
+Comments exercises **
+
+Looping a Triangle solution ***
+
+FizzBuzz solution **
+  should include a loop 
+    Expected:
+1
+    Actual:
+2
+
+
+Chess Board exercise *****
+
+The following was logged:
+Hello, World!
+Console 2:
+3
+Console 2:
+Hello, world!
+Console 2:
+[object Object]
+Console 3:
+The magic word is "Abracadabra!"
+Console 3:
+The magic word is "Shazam!"
+Console 3:
+The magic word is "Please"
+Console 4:
+Hello World
+This is another sentence.
+Console 5:
+secret passphrase
+Return 1:
+51.4
+Return 3:
+bcdaBCDA
+Return 4:
+30.435.2
+Control 2:
+What are you thinking, foo!
+What are you thinking, foo!
+What are you thinking, foo!
+Conditional 1:
+Welcome to Camelot!
+On second thoughts, let's not go to Camelot. It is a silly place.
+Catch of the day: influenza, $14/lb.
+Thanks for visiting Pier One and Three Quarters!
+While 1:
+10 sheep
+9 sheep
+8 sheep
+7 sheep
+6 sheep
+5 sheep
+4 sheep
+3 sheep
+2 sheep
+1 sheep
+While 2:
+I'm melting!
+m melting!
+melting!
+lting!
+ing!
+g!
+What a world!
+do while 1:
+0
+1
+2
+0
+1
+2
+do while 2:
+Train# 1: In flight!?
+Train# 2: In flight!?
+Train# 3: In flight!?
+Train# 4: In flight!?
+Train# 5: In flight!?
+Train# 6: In flight!?
+Train# 7: In flight!?
+For 1:
+...
+    ...AA
+        ...AAAA
+            ...AAAAAA
+                ...AAAAAAAA
+                    ...AAAAAAAAAAH!
+For 2:
+Hi!
+My name is
+My name is
+My name is
+Slim Shady
+Hi!
+My name is
+My name is
+My name is
+Slim Shady
+For 3:
+20
+even
+19
+odd
+18
+even
+17
+odd
+16
+even
+15
+odd
+14
+even
+13
+odd
+12
+even
+11
+odd
+10
+even
+9
+odd
+8
+even
+7
+odd
+6
+even
+5
+odd
+Zardoz
+The FP
+The Lost Skeleton of Cadavra
+Electric Boogaloo!
+Succinct 2:
+2! 2 fluttering hippos! Ah ah ah ah ah!
+3! 3 fluttering hippos! Ah ah ah ah ah!
+4! 4 fluttering hippos! Ah ah ah ah ah!
+5! 5 fluttering hippos! Ah ah ah ah ah!
+6! 6 fluttering hippos! Ah ah ah ah ah!
+7! 7 fluttering hippos! Ah ah ah ah ah!
+8! 8 fluttering hippos! Ah ah ah ah ah!
+9! 9 fluttering hippos! Ah ah ah ah ah!
+10! 10 fluttering hippos! Ah ah ah ah ah!
+Succinct 3:
+!
+e
+m
+ 
+e
+s
+r
+e
+v
+e
+R
+Switch 1:
+The cow goes "foo"!
+Switch 1:
+The sheep goes "bar"!
+Switch 1:
+The duck goes "quux"!
+Switch 1:
+The fox goes "ring-a-ding-ding-dingding-ding-a-ding-ding"!
+Comments 2:
+                      /
+     *              /      /
+     *          /  /   /  /         /
+     *         /      /       /    /
+     *       ,---------------.   ,-,
+     *      /                 `-'  |
+     *     [   A I R M A I L   |   |
+     *      \                 ,-.  |
+     *       `---------------'   `-`
+     *
+     
+#
+##
+###
+####
+#####
+######
+#######
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+16
+17
+Fizz
+19
+Buzz
+Fizz
+22
+23
+Fizz
+Buzz
+26
+Fizz
+28
+29
+FizzBuzz
+31
+32
+Fizz
+34
+Buzz
+Fizz
+37
+38
+Fizz
+Buzz
+41
+Fizz
+43
+44
+FizzBuzz
+46
+47
+Fizz
+49
+Buzz
+Fizz
+52
+53
+Fizz
+Buzz
+56
+Fizz
+58
+59
+FizzBuzz
+61
+62
+Fizz
+64
+Buzz
+Fizz
+67
+68
+Fizz
+Buzz
+71
+Fizz
+73
+74
+FizzBuzz
+76
+77
+Fizz
+79
+Buzz
+Fizz
+82
+83
+Fizz
+Buzz
+86
+Fizz
+88
+89
+FizzBuzz
+91
+92
+Fizz
+94
+Buzz
+Fizz
+97
+98
+Fizz
+Buzz

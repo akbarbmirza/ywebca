@@ -1,3 +1,5 @@
+Akbars-MacBook-Air.local
+/Users/akbar/dev/ywebca
 
 
 Expressions and Statements exercises **
@@ -68,11 +70,11 @@ This is another sentence.
 Console 5:
 secret passphrase
 Return 1:
-51.4
+53.8
 Return 3:
 bcdaBCDA
 Return 4:
-30.435.2
+32.917.5
 Control 2:
 What are you thinking, foo!
 What are you thinking, foo!

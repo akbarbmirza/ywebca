@@ -469,7 +469,7 @@ Exer.doWhile1 = function () {
   do {
     console.log(num % 3);
     num++;
-  } while (num < 6)
+  } while (num < 6);
 };
 
 /* jshint ignore:start */

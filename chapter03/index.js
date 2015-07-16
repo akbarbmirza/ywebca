@@ -11,7 +11,9 @@
 Exer.defining1 = function () {  //
 //==============================//
 
-
+  var three = function () {
+    return 3;
+  }
 
 };  // end Exer.defining1
 
@@ -24,7 +26,9 @@ Exer.defining1 = function () {  //
 Exer.defining2 = function () {  //
 //==============================//
 
-
+  var myLog = function (message) {
+    console.log("The Log Says: " + message);
+  }
 
 };  // end Exer.defining2
 
@@ -36,7 +40,11 @@ Exer.defining2 = function () {  //
 Exer.defining3 = function () {  //
 //==============================//
 
-
+  var square = function (number) {
+    result = number * number;
+    console.log(result);
+    return result;
+  }
 
 };  // end Exer.defining3
 
@@ -54,7 +62,14 @@ Exer.defining3 = function () {  //
 Exer.parameters1 = function() {  //
 //===============================//
 
+  var spaceCubeDetector = function (length, width, height) {
+    if (length == width && length == height) {
+      return "SPACE CUBE DETECTED!!";
+    }
+    return "THIS IS NO SPACE CUBE!";
+  }
 
+  return spaceCubeDetector;
 
  };  // end Exer.parameters1
 
@@ -70,7 +85,14 @@ Exer.parameters1 = function() {  //
 Exer.parameters2 = function(spaceCubeDetector) {  //
 //================================================//
 
+  var result = spaceCubeDetector(3, 5, 3.14159265359);
+  console.log(result);
 
+  result = spaceCubeDetector(7, 7, 7);
+  console.log(result);
+
+  result = spaceCubeDetector(1, 2, 3);
+  console.log(result);
 
 };  // Exer.parameters2
 
@@ -112,23 +134,23 @@ Exer.scopeExample = function() {
 //  Write your answers in this section
 
 Exer.scope1 = function() {
-  return /* return value for Scope 1 */ ;
+  return 5 ;
 };
 
 Exer.scope2 = function() {
-  return /* return value for Scope 2 */ ;
+  return 35 ;
 };
 
 Exer.scope3 = function() {
-  return /* return value for Scope 3 */ ;
+  return 7 ;
 };
 
 Exer.scope4 = function() {
-  return /* return value for Scope 4 */ ;
+  return 7 ;
 };
 
 Exer.scope5 = function() {
-  return /* return value for Scope 5 */ ;
+  return 35 ;
 };
 
 /*******************************************************************************
@@ -208,58 +230,58 @@ Exer.nestExample = function() {
 //  Write your answers in this section.
 
 Exer.nest1 = function() {
-  return /* answer for Nest 1 */ ;
+  return 2 ;
 };
 Exer.nest2 = function() {
-  return /* answer for Nest 2 */ ;
+  return 5 ;
 };
 Exer.nest3 = function() {
-  return /* answer for Nest 3 */ ;
+  return 7 ;
 };
 Exer.nest4 = function() {
-  return /* answer for Nest 4 */ ;
+  return 11 ;
 };
 Exer.nest5 = function() {
-  return /* answer for Nest 5 */ ;
+  return 7 ;
 };
 Exer.nest6 = function() {
-  return /* answer for Nest 6 */ ;
+  return 11 ;
 };
 Exer.nest7 = function() {
-  return /* answer for Nest 7 */ ;
+  return 7 ;
 };
 Exer.nest8 = function() {
-  return /* answer for Nest 8 */ ;
+  return 17 ;
 };
 Exer.nest9 = function() {
-  return /* answer for Nest 9 */ ;
+  return 17 ;
 };
 Exer.nest10 = function() {
-  return /* answer for Nest 10 */ ;
+  return 17 ;
 };
 Exer.nest11 = function() {
-  return /* answer for Nest 11 */ ;
+  return 13 ;
 };
 Exer.nest12 = function() {
-  return /* answer for Nest 12 */ ;
+  return 13 ;
 };
 Exer.nest13 = function() {
-  return /* answer for Nest 13 */ ;
+  return 0 ;
 };
 Exer.nest14 = function() {
-  return /* answer for Nest 14 */ ;
+  return 0 ;
 };
 Exer.nest15 = function() {
-  return /* answer for Nest 15 */ ;
+  return 0 ;
 };
 Exer.nest16 = function() {
-  return /* answer for Nest 16 */ ;
+  return 2 ;
 };
 Exer.nest17 = function() {
-  return /* answer for Nest 17 */ ;
+  return 5 ;
 };
 Exer.nest18 = function() {
-  return /* answer for Nest 18 */ ;
+  return 0 ;
 };
 
 /*******************************************************************************
@@ -274,7 +296,13 @@ Exer.nest18 = function() {
 Exer.values1 = function ( volume, spaceCubeDetector ) {  //
 //=======================================================//
 
+  var TEST_NUM = 1;
 
+  volume = spaceCubeDetector;
+
+  volume(TEST_NUM, TEST_NUM, TEST_NUM);
+
+  return volume;
 
 };  // end Exer.values1
 
@@ -286,7 +314,11 @@ Exer.values1 = function ( volume, spaceCubeDetector ) {  //
 Exer.values2 = function ( volume ) {  //
 //====================================//
 
+  volume = function(length, width, height) {
+    return length * width * height;
+  }
 
+  return volume;
 
 };  // end Exer.values2
 

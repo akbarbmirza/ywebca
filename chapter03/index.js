@@ -490,7 +490,7 @@ Exer.closures1 = function(spaceCubeDetector) {
         if (length == width && length == height) {
           return "SPACE CUBE DETECTED!!";
         }
-        return "THIS IS NO SPACE CUBE!?";
+        return "THIS IS NO SPACE CUBE!";
       }
     };
   }

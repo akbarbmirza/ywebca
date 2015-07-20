@@ -465,7 +465,7 @@ Exer.closures1 = function(spaceCubeDetector) {
   spaceCubeDetector = function (length, width) {
     return function (height) {
       if (length == width && length == height) {
-        return "SPACE CUBE DETECTED!!?";
+        return "SPACE CUBE DETECTED!!";
       }
       return "THIS IS NO SPACE CUBE!";
     };
@@ -506,7 +506,7 @@ Exer.closures1 = function(spaceCubeDetector) {
 //
 //=================================//
 Exer.recursion1 = function(code, controller) {
-  
+
 };
 
 /*******************************    Recursion 2   *******************************/

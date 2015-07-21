@@ -531,15 +531,14 @@ Exer.recursion2 = function(code, puzzleBox) {
 
 Exer.growing1 = function (pigPenSide, chickenPenSide, sheepPenSide) {
 
-  var pigPenSize = pigPenSide * pigPenSide;
-  var pigs = 'pigs';
-  console.log("The " + pigs + " need " + pigPenSize + "sq. ft.");
-  var chickenPenSize = chickenPenSide * chickenPenSide;
-  var chickens = 'chickens';
-  console.log("The " + chickens + " need " + chickenPenSize + "sq. ft.");
-  var sheepPenSize = sheepPenSide * sheepPenSide;
-  var sheeps = 'sheep';
-  console.log("The " + sheeps + " need " + sheepPenSize + "sq. ft.");
+  var animalPenSize = function(animal, animalPenSide) {
+    var penSize = animalPenSide * animalPenSide;
+    console.log('The ' + animal + ' need ' + penSize + 'sq. ft.');
+  }
+
+  animalPenSize('pigs', pigPenSide);
+  animalPenSize('chickens', chickenPenSide);
+  animalPenSize('sheep', sheepPenSide);
 
 };
 

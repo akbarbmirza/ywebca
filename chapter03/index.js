@@ -585,6 +585,8 @@ Exer.sideEffectExample = function() {
 //=================================//
 
 Exer.sideEffect1 = function() {
+  pairsOfLegsToTotalLegs();
+  hasTail();
 };
 
 /*******************************    Side Effects 2  *******************************/

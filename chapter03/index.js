@@ -594,4 +594,7 @@ Exer.sideEffect1 = function() {
 //=================================//
 
 Exer.sideEffect2 = function() {
+  getBarkNoise();
+  setBarkNoise();
+  bark();
 };

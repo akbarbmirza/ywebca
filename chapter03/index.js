@@ -558,7 +558,7 @@ Exer.sideEffectExample = function() {
   };
 
   setBarkNoise = function (bark) {
-    ;myBark = bark;
+    myBark = bark;
   }
 
   bark = function (bark, times) {

@@ -482,7 +482,7 @@ Exer.closures1 = function(spaceCubeDetector) {
 // that takes a height and returns the normal results for spaceCubeDetector.
 // 5.) Return the new spaceCubeDetector.
 //=================================//
-Exer.closures1 = function(spaceCubeDetector) {
+Exer.closures2 = function(spaceCubeDetector) {
 
   spaceCubeDetector = function (length) {
     return function (width) {

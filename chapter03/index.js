@@ -517,7 +517,18 @@ Exer.recursion1 = function(code, controller) {
 // 3.) Otherwise, call the recursive function again with `puzzleBox` as a
 // parameter then call `puzzleBox.click`'s returned function value.
 //=================================//
-Exer.recursion2 = function(code, puzzleBox) {
+Exer.recursion2 = function(puzzleBox) {
+
+  var recurse = function (puzzleBox) {
+    var temp = puzzleBox.click();
+
+    if (temp !== undefined) {
+      recurse(puzzleBox);
+      temp();
+    }
+  };
+  recurse(puzzleBox);
+
 };
 
 /*******************************************************************************

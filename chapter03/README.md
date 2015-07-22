@@ -615,19 +615,26 @@ These exercises correspond to [this section of the text](http://eloquentjavascri
         Nintendo Entertainment System. The AI they've built is not very good. Your
         project manager a code that can be entered into the game to increase the AI's
         chances of beating the game. You are given the code and a virtual controller.
-          
+
         Create a function to add to the AI that accepts `code` and `controller`.
-          
+
         `code` is given as an object that contains a sequence of strings accessed through
         a `next`, `last`, and `curr`. `next` changes the current item of the sequence to
         the next. `last` changes the current item of the sequence to the last. `next`
         and `last` return the current item on success and undefined on fail. `curr`
         returns the current item in the sequence.
-    
-        'controller' accepts a string. When it recives the correct string for a sequence
-        and is ready to receive another string in the sequence
-    
-        Note: The AI does not have access to for or while loops
+
+        `controller` accepts a string. When it recives the correct string for a sequence
+        and is ready to receive another string in the sequence it will return `true` it
+        will otherwise return `false`.
+
+        Create a recursive function that accepts a code and contoller. It should send the
+        current code item in the sequence to controller. After sending the item, check if
+        there is another item, and if move code to the next item of the sequence and pass
+        the code and controller to a new call of your recursive function. Finish the
+        exercise by calling your new function with code and controller.
+
+        Note: The AI does not have access to for or while loops.
       </td>
     </tr>
     <tr>

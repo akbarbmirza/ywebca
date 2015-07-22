@@ -1,0 +1,329 @@
+Akbars-MacBook-Air.local
+/Users/akbar/dev/ywebca
+
+
+Defining a Function exercises ***
+
+Parameters and Scopes exercises *******
+
+Nested Scope exercises ******************
+
+Functions as Values exercises **
+
+Declaration Notation exercises **
+
+The Call Stack exercises **
+
+Optional Arguments exercises **
+
+Closure exercises **
+
+Recursion exercises **
+
+Growing Functions exercises *
+
+Functions and Side Effects exercises **
+
+Minimum exercise *****
+
+Recursion exercise ******
+
+Bean Counting exercise ******
+
+The following was logged:
+The Log Says: I'm a secret passphrase!
+Defining 3:
+289
+THIS IS NO SPACE CUBE!
+SPACE CUBE DETECTED!!
+THIS IS NO SPACE CUBE!
+Declaration 1:
+You gotta believe!
+Declaration 2:
+Kick, punch, block! It's all in the mind!
+STACK 1 & 2:
+2
+durian
+3
+Key Pressed: up
+Key Pressed: up
+Key Pressed: down
+Key Pressed: down
+Key Pressed: left
+Key Pressed: right
+Key Pressed: left
+Key Pressed: right
+Key Pressed: B
+Key Pressed: A
+Key Pressed: select
+Key Pressed: start
+The puzzlebox clicks.
+The puzzlebox clicks.
+The puzzlebox clicks.
+The puzzlebox clicks.
+The puzzlebox clicks.
+The puzzlebox clicks.
+The puzzlebox clicks.
+The puzzlebox is free to be twisted.
+The puzzlebox turns.
+The puzzlebox turns.
+The puzzlebox turns.
+The puzzlebox turns.
+The puzzlebox turns.
+The puzzlebox turns.
+"We have such sights to show you..."
+The pigs need 4sq. ft.
+The chickens need 16sq. ft.
+The sheep need 9sq. ft.
+foo
+5
+bar
+250
+foo
+5
+bar
+245
+foo
+5
+bar
+240
+foo
+5
+bar
+235
+foo
+5
+bar
+230
+foo
+5
+bar
+225
+foo
+5
+bar
+220
+foo
+5
+bar
+215
+foo
+5
+bar
+210
+foo
+5
+bar
+205
+foo
+5
+bar
+200
+foo
+5
+bar
+195
+foo
+5
+bar
+190
+foo
+5
+bar
+185
+foo
+5
+bar
+180
+foo
+5
+bar
+175
+foo
+5
+bar
+170
+foo
+5
+bar
+165
+foo
+5
+bar
+160
+foo
+5
+bar
+155
+foo
+5
+bar
+150
+foo
+5
+bar
+145
+foo
+5
+bar
+140
+foo
+5
+bar
+135
+foo
+5
+bar
+130
+foo
+5
+bar
+125
+foo
+5
+bar
+120
+foo
+5
+bar
+115
+foo
+5
+bar
+110
+foo
+5
+bar
+105
+foo
+5
+bar
+100
+foo
+5
+bar
+95
+foo
+5
+bar
+90
+foo
+5
+bar
+85
+foo
+5
+bar
+80
+foo
+5
+bar
+75
+foo
+5
+bar
+70
+foo
+5
+bar
+65
+foo
+5
+bar
+60
+foo
+5
+bar
+55
+foo
+5
+bar
+50
+foo
+5
+bar
+45
+foo
+5
+bar
+40
+foo
+5
+bar
+35
+foo
+5
+bar
+30
+foo
+5
+bar
+25
+foo
+5
+bar
+20
+foo
+5
+bar
+15
+foo
+5
+bar
+10
+foo
+5
+bar
+5
+foo
+13
+bar
+78
+foo
+13
+bar
+65
+foo
+13
+bar
+52
+foo
+13
+bar
+39
+foo
+13
+bar
+26
+foo
+13
+bar
+13
+foo
+13
+bar
+79
+foo
+13
+bar
+66
+foo
+13
+bar
+53
+foo
+13
+bar
+40
+foo
+13
+bar
+27
+foo
+13
+bar
+14
+foo
+13
+bar
+1

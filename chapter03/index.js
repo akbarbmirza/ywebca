@@ -507,6 +507,17 @@ Exer.closures2 = function(spaceCubeDetector) {
 //=================================//
 Exer.recursion1 = function(code, controller) {
 
+  var game = function (code, controller) {
+    var current = code.curr();
+    controller(current);
+
+    if (code.next()) {
+      game(code, controller);
+    }
+  };
+
+  game(code, controller);
+
 };
 
 /*******************************    Recursion 2   *******************************/

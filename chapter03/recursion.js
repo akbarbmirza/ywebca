@@ -48,20 +48,29 @@ Exer.isFooDivByBar = function (foo, bar) {
 Exer.isDivisibleBy = function (foo) {
 
   var isDivisible = function (bar) {
+    // If bar is less than foo,
+    // return false
     if (bar < foo) {
       return false;
     }
+    // Otherwise, if bar is the same as foo,
+    // then we return true
     else if (bar == foo) {
       return true;
     }
+    // Otherwise...
     else {
+      // We subtract the divisor by foo
       bar -= foo;
+      // NOTE: DEBUG CODE
       console.log('foo', foo);
       console.log('bar', bar);
+      // Run isDivisible again on the smaller value of bar
       return isDivisible(bar);
     }
   };
 
+  // return the isDivisible function to the test
   return isDivisible;
 
 }

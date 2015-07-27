@@ -553,9 +553,8 @@ Exer.recursion2 = function(puzzleBox) {
 
 Exer.growing1 = function (pigPenSide, chickenPenSide, sheepPenSide) {
 
-  var animalPenSize = function(animal, animalPenSide) {
-    var penSize = animalPenSide * animalPenSide;
-    console.log('The ' + animal + ' need ' + penSize + 'sq. ft.');
+  var animalPenSize = function(animal, penSide) {
+    console.log('The ' + animal + ' need ' + penSide * penSide + 'sq. ft.');
   }
 
   animalPenSize('pigs', pigPenSide);

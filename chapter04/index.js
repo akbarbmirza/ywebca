@@ -130,7 +130,28 @@ mutability(x, y);
 
 /*--------------------------    OBJECTS AS MAPS    --------------------------*/
 
+var maps = function (accounts) {
 
+  for (var user in accounts) {
+    if (user.charAt(0) === 'T') {
+      if (accounts[user].owed === 0) {
+        console.log(user + " owes $0");
+      }
+    }
+  }
+
+};
+
+// NOTE: TEST CODE
+var accounts = {
+  'Tom': {owed: 500},
+  'Kevin': {owed: 0},
+  'Savance': {owed: 1000},
+  'Timothy': {owed: 0},
+  'Troy': {owed: 0}
+};
+
+maps(accounts);
 
 /*----------------------------    ARRAYOLOGY    -----------------------------*/
 

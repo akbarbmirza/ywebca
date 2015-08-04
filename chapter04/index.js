@@ -21,7 +21,17 @@ dataOne(test);
 
 /*****************************    Data Sets 2    *****************************/
 
+var dataTwo = function (array) {
 
+  for (var i = 0, len = array.length; i < len; i++) {
+    console.log(array[i]);
+  }
+
+};
+
+// NOTE: Test Code
+var test = [1, 2, 3, 4, 5];
+dataTwo(test);
 
 /*-----------------------------    PROPERTIES    ----------------------------*/
 

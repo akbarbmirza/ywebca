@@ -45,6 +45,73 @@ var range = function(start, end, step) {
   return result;
 };
 
+//==============================================================================
+// Caesar Cipher
+//==============================================================================
+
+var alpha = [
+    'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
+    'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
+    'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X',
+    'Y', 'Z'
+];
+
+var encrypt = function (toEncrypt, key) {
+
+  var cipher = {' ': ' '};
+
+  var shift = alpha.indexOf(key.toUpperCase());
+
+  for (var i = 0, len = alpha.length; i < len; i++) {
+    if (i + shift < len) {
+      cipher[alpha[i]] = alpha[i + shift];
+    } else {
+      cipher[alpha[i]] = alpha[(i + shift) - 26];
+    }
+  }
+
+  console.log(cipher);
+
+  var encrypted = '';
+
+  for (var i = 0, len = toEncrypt.length; i < len; i++) {
+    encrypted += cipher[toEncrypt[i].toUpperCase()];
+  }
+
+  return encrypted;
+};
+
+var decrypt = function (toDecrypt, key) {
+
+  var cipher = {' ': ' '};
+
+  var shift = alpha.indexOf(key.toUpperCase());
+
+  for (var i = 0, len = alpha.length; i < len; i++) {
+    if (shift - i > 0) {
+      cipher[alpha[i]] = alpha[len - shift + i];
+    }
+    else {
+      cipher[alpha[i]] = alpha[i - shift];
+    }
+  }
+
+  console.log(cipher);
+
+  var decrypted = '';
+
+  for (var i = 0, len = toDecrypt.length; i < len; i++) {
+     decrypted += cipher[toDecrypt[i].toUpperCase()];
+  }
+
+  return decrypted;
+};
+
+// NOTE: TEST CODE
+encrypt('THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG', 'D');
+
+decrypt('WKH TXLFN EURZQ IRA MXPSV RYHU WKH ODCB GRJ', 'D');
+
 /***********************    DANGER ZONE DO NOT CROSS    ***********************/
 if(!Exer) Exer = {};
 for (value in this)

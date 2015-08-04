@@ -45,6 +45,27 @@ var range = function(start, end, step) {
   return result;
 };
 
+/* Sum Function
+ * ============
+ *
+ * The sum function takes an array of numbers and returns the sum of these
+ * numbers.
+ */
+
+var sum = function(array) {
+  var result = 0;
+  for (var i = 0; i < array.length; i++) {
+    result += array[i];
+  }
+  return result;
+};
+
+// NOTE: TEST CODE
+console.log(sum(range(1, 10)));
+// → 55
+console.log(range(5, 2, -1));
+// → [5, 4, 3, 2]
+
 //==============================================================================
 // Caesar Cipher
 //==============================================================================

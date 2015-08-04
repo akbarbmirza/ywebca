@@ -181,7 +181,29 @@ console.log(result);
 
 /*-------------------    STRINGS AND THEIR PROPERTIES    --------------------*/
 
+var strings = function (str) {
+  var result = '';
 
+  var start = str.indexOf('fnord') + 5;
+  var end = str.indexOf('fnord', start);
+
+  if (end > 0) {
+    result = str.slice(start, end);
+  }
+  else {
+    result = str.slice(start);
+  }
+
+  return result;
+};
+
+// NOTE: TEST CODE
+
+var str = 'fnordhelloworld';
+var str2 = 'fnordhelloworldfnordgoogoo';
+
+strings(str);
+strings(str2);
 
 /*------------------------   THE ARGUMENTS OBJECT    ------------------------*/
 

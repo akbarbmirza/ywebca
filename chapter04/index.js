@@ -64,7 +64,31 @@ var properties = function (dog) {
 
 /*-------------------------------    OBJECTS    -----------------------------*/
 
+var objects = function () {
 
+  var barkSound = 'BARK';
+
+  var fido = {
+
+    this.isAgoodBoy = function () {
+      return barkSound;
+    };
+
+    this.setBark = function (newBark) {
+      barkSound = newBark;
+    };
+
+    this.tricks = [
+      'roll over',
+      'fetch',
+      'play Beethoven\'s 5th'
+    ];
+
+  };
+
+  return fido;
+
+};
 
 /*----------------------------    MUTABILITY    -----------------------------*/
 

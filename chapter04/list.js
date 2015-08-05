@@ -209,9 +209,47 @@ console.log(firstNode);
  * list and returns its value.
  */
 
+/* Doesn't work because JS doesn't let you replace passed objects completely...
 var shift = function (list) {
+  // store the first node
+  var firstNode = list;
 
+  // store the rest of the list
+  list = list.next;
+
+  // remove the first node from the rest of the list
+  list.prev = null;
+
+  // return the value of our first node
+  return firstNode.value;
 };
+*/
+
+var shift = function (list) {
+  // store the value in first node
+  var val = list.value;
+
+  // store the value of the second in the first node
+  list.value = list.next.value;
+
+  // find the third node;
+  var thirdNode = list.next.next;
+
+  // first node should point to third node
+  list.next = thirdNode;
+
+  // third node's prev should point to first
+  thirdNode.prev = list;
+
+  // return value from original first node
+  return val;
+}
+
+// NOTE: TEST CODE
+console.log('=== TEST SHIFT ===');
+var shifted = shift(list);
+console.log('SHIFTED:', shifted);
+console.log(list);
 
 /* Unshift Function
  * ================

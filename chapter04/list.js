@@ -259,8 +259,24 @@ console.log(list);
  */
 
 var unshift = function (list, value) {
+  // create a node and give it the values in the first node
+  var node = {
+    value: list.value,
+    next: list.next,
+    prev: list
+  };
 
-};
+  // give the first node the new value
+  list.value = value;
+
+  // set the first node's next to the node we just added
+  list.next = node;
+}
+
+// NOTE: TEST CODE
+console.log('=== TEST UNSHIFT ===');
+unshift(list, 5);
+console.log(list);
 
 //------------------------------------------------------------------------------
 // End Helper Functions

@@ -144,8 +144,32 @@ var findLastNode = function (list) {
  */
 
 var push = function (list, value) {
+  // find the last node in the given list
+  var lastNode = findLastNode(list);
 
+  // create the node we want to add
+  var node = {
+   value: value,
+   prev: lastNode,
+   next: null
+  };
+
+  // set the next pointer in the last node, to point to our new node
+  lastNode.next = node;
 };
+
+// NOTE: TEST CODE
+var array = [0, 1, 2];
+
+var firstNode = {value: 0, prev: null, next: null},
+    secondNode = {value: 1, prev: firstNode, next: null},
+    thirdNode = {value: 2, prev: secondNode, next: null};
+
+firstNode.next = secondNode;
+secondNode.next = thirdNode;
+
+push(firstNode, 3);
+console.log(firstNode);
 
 /* Pop Function
  * ============

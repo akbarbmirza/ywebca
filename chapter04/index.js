@@ -44,7 +44,23 @@ var properties = function (dog) {
 
 /*-------------------------------    METHODS    -----------------------------*/
 
+var properties = function (dog) {
 
+  dog.bark();
+
+  if (dog.isAGoodBoy()) {
+    dog.setBark('arf...');
+  } else {
+    dog.setBark('whimper');
+  }
+
+  console.log(dog.getBark());
+
+  dog.bark();
+
+  dog.isAGoodBoy(true);
+
+}
 
 /*-------------------------------    OBJECTS    -----------------------------*/
 

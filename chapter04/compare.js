@@ -55,6 +55,39 @@ console.log(deepEqual(obj, {here: 1, object: 2}));
 console.log(deepEqual(obj, {here: {is: "an"}, object: 2}));
 // → true
 
+/* Deep Clone Function
+ * ===================
+ *
+ * The deepClone function takes an object and returns a copy of that object.
+ * Deep Clone.
+ */
+
+var deepClone = function (obj) {
+  var copy;
+  // If obj is an Object...
+  if (typeof obj === 'object') {
+    copy = {};
+    for (var property in obj) {
+      copy[property] = deepClone(obj[property]);
+    }
+  }
+  // Otherwise...
+  else {
+    copy = obj;
+  }
+  return copy;
+};
+
+// NOTE: TEST CODE
+var testObj = {
+  name: 'Akbar Mirza',
+  age: 20,
+  info: { hometown: 'NYC', occupation: 'being awesome'},
+  'hello greeting': 'Hello, World!'
+};
+
+var copy = deepClone(testObj);
+console.log(copy);
 
 /***********************    DANGER ZONE DO NOT CROSS    ***********************/
 if(!Exer) Exer = {};

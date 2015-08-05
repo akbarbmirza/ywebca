@@ -103,6 +103,81 @@ console.log(prepend(10, prepend(20, null)));
 console.log(nth(arrayToList([10, 20, 30]), 1));
 // → 20
 
+//==============================================================================
+// A Doubly-Linked List
+//==============================================================================
+
+/* NOTE: What is a doubly-linked list?
+ * In a doubly-linked list, each node points to both its previous node and its
+ * next. Each node of the list should have three members: value, prev, and
+ * next.
+ *
+ * A list knows when it gets to the end when its next or prev value is null.
+ */
+
+//------------------------------------------------------------------------------
+// Helper Functions
+//------------------------------------------------------------------------------
+
+/* Push Function
+ * =============
+ *
+ * The push function takes a list and a value and adds a node with the value
+ * given to the end of the list
+ */
+
+var push = function (list, value) {
+
+};
+
+/* Pop Function
+ * ============
+ *
+ * The pop function takes a list, removes a node from the beginning of the
+ * list and returns its value.
+ */
+
+var pop = function (list) {
+
+};
+
+/* Shift Function
+ * ==============
+ *
+ * The shift function takes a list, removes a node from the beginning of the
+ * list and returns its value.
+ */
+
+var shift = function (list) {
+
+};
+
+/* Unshift Function
+ * ================
+ *
+ * The shift function takes a list, and adds a node with the value given to
+ * the beginning of the list.
+ */
+
+var unshift = function (list, value) {
+
+};
+
+//------------------------------------------------------------------------------
+// End Helper Functions
+//------------------------------------------------------------------------------
+
+/* Array to Doubly-Linked List Function
+ * ====================================
+ *
+ * The arrayToList function builds up a list data structure, when given an array
+ * as an argument.
+ */
+
+var arrayToDLL = function (array) {
+
+};
+
 /***********************    DANGER ZONE DO NOT CROSS    ***********************/
 if(!Exer) Exer = {};
 for (value in this)

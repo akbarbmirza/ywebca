@@ -155,7 +155,29 @@ maps(accounts);
 
 /*----------------------------    ARRAYOLOGY    -----------------------------*/
 
+var arrayology = function (array) {
 
+  var result = [];
+  var inBetween = false;
+
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] == 'fnord') {
+      inBetween = !inBetween;
+      i++;
+    }
+    if (inBetween) {
+      result.push(array[i]);
+    }
+  }
+
+  return result;
+};
+
+// NOTE: TEST CODE
+var array = ['fnord', 'a', 'b', 'fnord', 'd', 'e', 'frank'];
+
+var result = arrayology(array);
+console.log(result);
 
 /*-------------------    STRINGS AND THEIR PROPERTIES    --------------------*/
 

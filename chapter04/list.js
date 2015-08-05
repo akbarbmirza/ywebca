@@ -161,16 +161,16 @@ var push = function (list, value) {
 // NOTE: TEST CODE
 var array = [0, 1, 2];
 
-var firstNode = {value: 0, prev: null, next: null},
-    secondNode = {value: 1, prev: firstNode, next: null},
+var list = {value: 0, prev: null, next: null},
+    secondNode = {value: 1, prev: list, next: null},
     thirdNode = {value: 2, prev: secondNode, next: null};
 
-firstNode.next = secondNode;
+list.next = secondNode;
 secondNode.next = thirdNode;
 
 console.log('=== TEST PUSH ===');
-push(firstNode, 3);
-console.log(firstNode);
+push(list, 3);
+console.log(list);
 
 /* Pop Function
  * ============
@@ -199,8 +199,8 @@ var pop = function (list) {
 
 // NOTE: TEST CODE
 console.log('=== TEST POP ===');
-pop(firstNode);
-console.log(firstNode);
+pop(list);
+console.log(list);
 
 /* Shift Function
  * ==============
@@ -290,8 +290,24 @@ console.log(list);
  */
 
 var arrayToDLL = function (array) {
+  var list = {
+    value: array[0],
+    next: null,
+    prev: null
+  };
 
+  for (var i = 1; i < array.length; i++) {
+    push(list, array[i]);
+  }
+
+  return list;
 };
+
+// NOTE: TEST CODE
+console.log('=== TEST ARRAY TO DLL ===');
+var test = [1, 5, 25, 125];
+var obj = arrayToDLL(test);
+console.log(obj);
 
 /***********************    DANGER ZONE DO NOT CROSS    ***********************/
 if(!Exer) Exer = {};

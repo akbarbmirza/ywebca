@@ -51,6 +51,73 @@ reverseArrayInPlace(arrayValue);
 console.log(arrayValue);
 // → [5, 4, 3, 2, 1]
 
+//==============================================================================
+// Once More with Recursion
+//==============================================================================
+
+var reverseArrayRecur = function (array) {
+  // Declare Variables we'll need
+  var half,       // middle index of array
+      firstHalf,  // first half of array
+      secondHalf, // second half of array
+      middle,     // middle of odd-sized array
+      result;     // return value
+
+  half = Math.floor(array.length / 2);
+
+  if (array.length == 1) {
+    return array;
+  }
+  else if (array.length == 2) {
+    return [array[1], array[0]];
+  }
+  else {
+    if (array.length % 2 === 0) {
+      // splice first half
+      firstHalf = array.slice(0, half);
+      // splice second half
+      secondHalf = array.slice(half);
+
+      // reverse individual halves
+      firstHalf = reverseArrayRecur(firstHalf);
+      secondHalf = reverseArrayRecur(secondHalf);
+
+      // combine them in reverse order
+      result = secondHalf.concat(firstHalf);
+
+      return result;
+    }
+    else {
+      // splice first half
+      firstHalf = array.slice(0, half);
+      // get middle piece
+      middle = array[half];
+      // splice second half
+      secondHalf = array.slice(half + 1);
+
+      // Reverse individual halves
+      firstHalf = reverseArrayRecur(firstHalf);
+      secondHalf = reverseArrayRecur(secondHalf);
+
+      // combine them in reverse order
+      result = secondHalf.concat(middle, firstHalf);
+
+      return result;
+    }
+  }
+
+};
+
+// NOTE: TEST CODE
+
+var array = [0, 1, 2, 3];
+
+var two = [0, 1, 2, 3, 4];
+
+console.log(reverseArrayRecur(array));
+
+console.log(reverseArrayRecur(two));
+
 /***********************    DANGER ZONE DO NOT CROSS    ***********************/
 if(!Exer) Exer = {};
 for (value in this)

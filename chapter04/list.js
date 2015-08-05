@@ -168,19 +168,39 @@ var firstNode = {value: 0, prev: null, next: null},
 firstNode.next = secondNode;
 secondNode.next = thirdNode;
 
+console.log('=== TEST PUSH ===');
 push(firstNode, 3);
 console.log(firstNode);
 
 /* Pop Function
  * ============
  *
- * The pop function takes a list, removes a node from the beginning of the
+ * The pop function takes a list, removes a node from the end of the
  * list and returns its value.
  */
 
 var pop = function (list) {
+  // find the last node in the given list
+  // i.e. the node we're going to remove
+  var lastNode = findLastNode(list);
 
+  // find the node before that node
+  var prevNode = lastNode.prev;
+
+  // set lastNode.prev to null
+  //lastNode.prev = null;
+
+  // set prevNode.next to null
+  prevNode.next = null;
+
+  // return the value of the node we removed
+  return lastNode.value;
 };
+
+// NOTE: TEST CODE
+console.log('=== TEST POP ===');
+pop(firstNode);
+console.log(firstNode);
 
 /* Shift Function
  * ==============

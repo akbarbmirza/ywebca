@@ -119,6 +119,23 @@ console.log(nth(arrayToList([10, 20, 30]), 1));
 // Helper Functions
 //------------------------------------------------------------------------------
 
+/* Find Last Node Function
+ * =======================
+ *
+ * The findLastNode function takes a list and returns the last node in the
+ * list. i.e. the node whose next value is null;
+ */
+
+var findLastNode = function (list) {
+  var node = list;
+
+  while (node.next) {
+    node = node.next;
+  }
+
+  return node;
+};
+
 /* Push Function
  * =============
  *

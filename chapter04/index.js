@@ -84,7 +84,7 @@ var objects = function () {
 
 };
 
-*----------------------------    MUTABILITY    -----------------------------*/
+/*----------------------------    MUTABILITY    -----------------------------*/
 
 var mutability = function (obj1, obj2) {
 
@@ -147,7 +147,7 @@ var accounts = {
 
 maps(accounts);
 
-*----------------------------    ARRAYOLOGY    -----------------------------*/
+/*----------------------------    ARRAYOLOGY    -----------------------------*/
 
 var arrayology = function (array) {
 

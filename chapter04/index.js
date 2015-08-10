@@ -35,8 +35,12 @@ dataTwo(test);
 
 /*-----------------------------    PROPERTIES    ----------------------------*/
 
+var properties = function (dog) {
 
+  console.log(dog.legs);
+  console.log(dog.isAGoodBoy);
 
+}
 
 /*-------------------------------    METHODS    -----------------------------*/
 

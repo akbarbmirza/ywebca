@@ -201,7 +201,21 @@ strings(str2);
 
 /*------------------------   THE ARGUMENTS OBJECT    ------------------------*/
 
+var arguments = function () {
 
+  var total = 0;
+
+  for (var i = 0; i < arguments.length; i++) {
+    total += arguments[i];
+  }
+
+  return total;
+
+};
+
+// NOTE: TEST CODE
+
+arguments(1, 2, 15, 20);
 
 /*--------------------------    THE MATH OBJECT    --------------------------*/
 

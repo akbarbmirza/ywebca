@@ -84,9 +84,43 @@ var objects = function () {
 
 };
 
-/*----------------------------    MUTABILITY    -----------------------------*/
+*----------------------------    MUTABILITY    -----------------------------*/
 
+var mutability = function (obj1, obj2) {
 
+  if (obj1 == obj2) {
+    console.log(obj1);
+  }
+  else {
+    var isEqual = false;
+    // If Color Matches...
+    if (obj1.color == obj2.color) {
+      console.log('color matches');
+      isEqual = true;
+    }
+    // If Quantity Matches...
+    if (obj1.quantity == obj2.quantity) {
+      console.log('quantity matches');
+      isEqual = true;
+    }
+    // If isA Matches...
+    if (obj1.isA == obj2.isA) {
+      console.log('isA matches');
+      isEqual = true;
+    }
+
+    if (!isEqual) {
+      console.log(obj1);
+      console.log(obj2);
+    }
+  }
+};
+
+// NOTE: TEST CODE
+var x = {color: 'red', quantity: 30, isA: 'dog'};
+var y = {color: 'blue', quantity: 20, isA: 'cat'};
+
+mutability(x, y);
 
 /*--------------------------    OBJECTS AS MAPS    --------------------------*/
 

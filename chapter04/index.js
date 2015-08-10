@@ -64,7 +64,25 @@ var methods = function (dog) {
 
 /*-------------------------------    OBJECTS    -----------------------------*/
 
+var objects = function () {
 
+  var barkSound = 'BARK';
+
+  var fido = {
+
+    isAGoodBoy: function () {
+      return barkSound;
+    },
+    setBark: function (newBark) {
+      barkSound = newBark;
+    },
+    tricks: [ 'roll over', 'fetch', 'play Beethoven\'s 5th' ]
+
+  };
+
+  return fido;
+
+};
 
 /*----------------------------    MUTABILITY    -----------------------------*/
 

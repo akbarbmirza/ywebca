@@ -219,14 +219,20 @@ arguments(1, 2, 15, 20);
 
 /*--------------------------    THE MATH OBJECT    --------------------------*/
 
+var math = function (arg) {
 
+  if (typeof arg === 'string') {
+    return Math.PI;
+  }
+  else {
+    return arg * Math.random();
+  }
 
+};
 
+// NOTE: TEST CODE
 
-
-
-
-
+math(4);
 
 /* !!DANGER ZONE!! */
 /*  DO NOT CROSS!  */
